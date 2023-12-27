@@ -4,7 +4,7 @@ The program is intended for personal use only and will likely not function on ot
 
 Many functions are obsolete and may not be used at all during normal operation. However, most are out-commented at the end of each file in case of changes during development.
 
-Program description
+Program description:
 The program is split into 3 main separate processes: Scanning, Separation and Solving. These processes each have their own subprocesses which often tie into a loop for the main process. Descriptions below omit certain details for simplification.
 
 The scanning process separates the puzzle pieces from the known background using a XOR operator and moves every piece into a clearing before saving an image of the piece, creating a PuzzlePiece object, using the image to find the corners, center and edges of the piece and moving the piece into a temporary storage pile below. The scanned pieces are objects in the PieceCollection object "pieces" list for the next process.
