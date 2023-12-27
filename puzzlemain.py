@@ -13,11 +13,10 @@ import logging
 
 #TODO:
 # Chunk sometimes not being moved (possibly due to being too fast)
-# Check solving capabilities for pieces >100
 # Pieces sometimes wrongly being matched
 # Chunk sometimes being moved into pile area (maybe piece is not removed from set?) (kanske att clickningar är för snabba) (förmodligen så märks inte den senaste matchningen)
 
-#MÅSTE FIXA MUS SUPPRESSOR
+#Mouse suppressor
 
 if __name__ == '__main__':
     scan = ImageScanner.imagescanner()
