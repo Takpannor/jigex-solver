@@ -2,10 +2,10 @@
 
 The program is intended for personal use only and will likely not function on other systems without additional effort. The code is therefore only posted on github as a complement to the demonstration.
 
-Many functions are obsolete and may not be used at all during normal operation. However, most are out-commented at the end of each file in case of changes during development. Documentation is also lacking for most objects and functions.
+Many functions are obsolete and may not be used at all during normal operation. However, most are out-commented at the end of each file in case of changes during development. Documentation is also lacking for most objects and functions, only the most recent pieceMover object is fully documented.
 
 Program operation description: <br />
-The program is split into 3 main separate processes: Scanning, Separation and Solving. These processes each have their own subprocesses which often tie into a loop for the main process. Descriptions below omit certain details for simplification.
+The program is split into 3 main separate processes: Scanning, Separation and Solving. These processes each have their own subprocesses which often tie into a loop for the main process. Descriptions below may omit certain details for simplification.
 
 The scanning process separates the puzzle pieces from the known background using a XOR operator and moves every piece into a clearing before saving an image of the piece, creating a PuzzlePiece object, using the image to find the corners, center and edges of the piece and moving the piece into a temporary storage pile below. The scanned pieces are stored in the PieceCollection object for the next process.
 
